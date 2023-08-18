@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+:root{
+--Soft-Blue: hsl(231, 69%, 60%);
+--Soft-Red: hsl(0, 94%, 66%);
+--Grayish-Blue: hsl(229, 8%, 60%);
+--Very-Dark-Blue: hsl(229, 31%, 21%);
+
+--Font-family:'Rubik';
+--Font-weight-regular:400;
+--Font-weight-medium:500;
+--Font-size: 18px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--Font-family);
+}
+header{
+    display: flex;
+    padding: 40PX 120PX;
+    font-weight: var(--Font-weight-regular);
+    color: var(--Very-Dark-Blue);
+    align-items: center;
+}
+header>ul{
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+header>ul>li:hover{
+    color: var(--Soft-Red);
+    cursor: pointer;
+}
+header>ul>li>button{
+    padding: 10px 30px;
+    background-color: var(--Soft-Red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight:var(--Font-weight-medium);
+}
+header>ul>li>button:hover{
+ border: 2px solid var(--Soft-Red);
+ background-color: transparent;
+ color: var(--Soft-Red);
+ cursor: pointer;
+}
+#menu{
+    visibility: hidden;
+}
+main{
+    display: grid;
+    place-items: center;
+}
+#first-container{
+    padding: 50px 120px;
+    display: flex;
+    align-items: center;
+    >img{
+        width: 100%;
+        margin-right: -110px;
+    }
+}
+
+h1{
+    color: var(--Very-Dark-Blue);
+    width: 400px;
+}
+p{
+    font-weight: var(--Font-weight-regular);
+    color: var(--Grayish-Blue);
+    margin-top: 25px;
+    font-size: var(--Font-size);
+    line-height: 25px;
+}
+#card>div{
+    display: flex;
+    gap: 15px;
+}
+#card>div>button{
+padding: 15px 25px;
+border: none;
+border-radius: 5px;
+margin-top: 35px;
+}
+#one{
+    background-color: var(--Soft-Blue);
+    color:white;
+}
+#one:hover{
+    background-color: transparent;
+    color: var(--Soft-Blue);
+    border: 2px solid var(--Soft-Blue);
+    cursor: pointer;
+}
+#two{
+    background-color:rgb(235, 236, 239);
+    color: var(--Very-Dark-Blue);
+}
+#two:hover{
+background-color: transparent;
+color: var(--Very-Dark-Blue);
+cursor: pointer;
+border: 2px solid var(--Very-Dark-Blue);
+}
+#second-container{
+    display: grid;
+    place-items: center;
+    padding: 30px  100px;
+}
+#second-container>p{
+    width: 550px;
+    text-align: center;
+}
+h3{
+    font-size: 1.8rem;
+    color: var(--Very-Dark-Blue);
+}
+.tab{
+    display: flex;
+    margin-top: 50px;
+    gap: 100px;
+    justify-content: center;
+    border-bottom: 2px solid hsl(225, 14%, 83%);
+    width: 700px;
+    overflow: hidden;
+}
+.tab button{
+    color: var(--Grayish-Blue);
+    width: 50%;
+    padding-bottom: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-family: var(--Font-family);
+    font-weight: var(--Font-weight-medium);
+font-size: 16px;
+}
+.tab button:hover{
+    color: var(--Soft-Red);
+    cursor:pointer;
+}
+.tab button.active{
+    border-bottom: 3px solid var(--Soft-Red);
+    color: var(--Very-Dark-Blue);
+}
+
+.container{
+    align-items: center;
+    margin-top: 70px;
+    display:none;
+    gap: 100px;
+    width: 1000px;
+}
+.container>img{
+    width: 47%;
+}
+.card>p{
+    width: 450px;
+}
+.more{
+    padding: 15px 20px;
+    background-color: var(--Soft-Blue);
+    color: white;
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+}
+#third-container{
+    display: grid;
+    place-items: center;
+    margin-top: 170px;
+    text-align: center;
+}
+#third-container>p{
+    width: 550px;
+}
+.browsers{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+.browser{
+    padding: 60PX 50PX 30px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(165, 164, 164, 0.2), 0 6px 20px 0 rgba(165, 164, 164, 0.2);
+}
+.browser>h4{
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: var(--Font-weight-medium);
+}
+.browser>p{
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+  hr{
+    border: none;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    border-top: 3px dotted var(--Grayish-Blue);
+  }
+  .browser>button{
+    margin-top: 65px;
+    padding: 17px 35px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--Soft-Blue);
+    border: none;
+    border-radius: 5px;
+  }
+  .browser>button:hover{
+    border: 2px solid var(--Soft-Blue);
+    background-color: transparent;
+    color: var(--Soft-Blue);
+    cursor: pointer;
+  }
+  #firefox{
+    position: relative;
+    top: 40px;
+  }
+  #Opera{
+    position: relative;
+    top: 80px;
+  }
+  #fourth-container{
+    display: grid;
+    margin: 250px 335px;
+    text-align: center;
+  }
+#fourth-container>p{
+    width: 500px;
+    margin-left: 50px;
+}
+.questions{
+    margin-top: 50px;
+    text-align: start;
+}
+.question{
+    padding: 15px 0px;
+    height: 60px;
+    overflow: hidden;
+    border-top: 1px solid rgb(194, 193, 193);
+    border-bottom: 1px solid rgb(194, 193, 193) ;
+}
+.question.open{
+    height: auto;
+   overflow: visible;
+
+}
+.question>p{
+  line-height: 35px;
+  margin-bottom:10px ;
+}
+span{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: var(--Font-weight-medium);
+}
+span>img{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.arrow {
+    transition: transform 0.3s; /* Add a transition for smooth animation */
+    cursor: pointer;
+  }
+  
+  .arrow.rotated {
+    transform: rotate(180deg); 
+  }
+  
+span:hover{
+    cursor: pointer;
+    color: var(--Soft-Red);
+}
+.more-button{
+    margin: 60px 230px;
+    padding: 17px 35px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--Soft-Blue);
+    border: none;
+    border-radius: 5px;
+}
+#last-container{
+    background-color: var(--Soft-Blue);
+    display: grid;
+    place-items: center;
+    margin-top: -190px;
+    padding: 50px 0px 25px;
+    color: white;
+}
+#last-container>small{
+    letter-spacing: 5px;
+}
+#last-container>h2{
+    width: 350px;
+    text-align: center;
+    margin-top: 30px;
+}
+#input{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+#input>img{
+    position: relative;
+    left: -40px;
+    visibility: hidden;
+}
+#input>div{
+    background-color: var(--Soft-Red);
+    margin-left: -10px;
+    padding: 14px 16px;
+    border-radius: 4px;
+}
+#input>div:hover{
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid var(--Soft-Red);
+    color: var(--Soft-Red);
+}
+input{
+    padding: 15px;
+    padding-right: 70px;
+    border: none;
+    border-radius: 3px;
+}
+::placeholder{
+    color: rgb(208, 208, 209);
+}
+form>small{
+    background-color: var(--Soft-Red);
+    visibility: hidden;
+    padding: 5px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    gap: 70px;
+}
+
+footer>ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+footer>ul>li:hover{
+    color: var(--Soft-Red);
+}
+footer>div{
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+@media (max-width:550px) {
+    header{
+        padding: 40PX 30PX;
+    }
+    header>ul{
+        display: none;
+    }
+    #menu{
+       visibility: visible;
+       margin-left: auto;
+    }
+    main{
+        place-items: start;
+    }
+    #first-container{
+        padding: 0px 0px;
+        margin-top: 50px;
+        display: grid;
+        width: 100%;
+    }
+    #first-container>img{
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+    #card{
+      text-align: center;
+      display: grid;
+      place-items: center;
+      margin: 60px 40px;
+    }
+    h1{
+     font-size: 2.5rem;
+     font-weight: var(--Font-weight-medium);
+    }
+    p{
+       padding: 0px 50px;
+    }
+    #card>div>button{
+        padding: 18px 55px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 35px;
+        font-size: 14px;
+    }
+    #second-container{
+        display: grid;
+        padding: 0px  0px;
+        place-items: start;
+        margin: 130PX 30PX;
+        width: 38%;
+    }
+    #second-container>p{
+        width: 460px;
+       
+    }
+    h3{
+       margin-left: 170px;
+    }
+    .tab{
+        display:grid;
+        place-items: center;
+        margin-top: 50px;
+        width: 470px;
+        gap: 0px;
+        border-bottom: none;
+    }
+    .tab button{
+        width: 470PX;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-top: 1px solid var(--Grayish-Blue);
+        border-bottom: 1px solid var(--Grayish-Blue);
+    font-size: 20px;
+    
+    }
+    .tab button.active{
+      border-top: 1px solid var(--Grayish-Blue);
+    }
+.card{
+    position: relative;
+    top: 400px;
+    left: -600px;
+    
+    margin-left: 35px;
+}
+.card>h3{
+    margin-left: 80px;
+}
+.card>p{
+width: 470px;
+text-align: center;
+}
+   .more{
+    margin-left: 180px;
+   }
+   #third-container{
+   margin-left: 40px;
+   margin-top: 400px;
+}
+#third-container>p{
+    width: 450px;
+}
+#third-container>h3{
+    margin-left: -20px;
+}
+.browsers{
+    display:grid;
+    margin-top: 50px;
+    gap: 20px;
+}
+#fourth-container{
+    display: grid;
+    margin: 300px 0px;
+  }
+#fourth-container>p{
+    width: 480px;
+    margin-left: 20px;
+}
+#fourth-container>h3{
+width: 300px;
+margin-left: 120px;
+}
+.question{
+    margin-left: 40px;
+ width: 80%;
+
+}
+.question>p{
+    margin-left: -50px;
+}
+.more-button{
+    margin: 60px 200px;
+}
+#input{
+    display: grid;
+}
+#input>input{
+   padding-right: 300px;
+}
+#input>img{
+    position: relative;
+    top: -35px;
+    left: 435px;
+}
+#input>div{
+    margin-left: 0px;
+   text-align: center;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+form>small{
+   padding: 8PX 15PX;
+   padding-right: 270px;
+  position:absolute;
+  bottom: -4130px;
+}
+footer{
+    display: grid;
+    place-items: center;
+    padding-bottom: 60px;
+}
+footer>ul{
+   display: grid;
+   place-items: center;
+}
+footer>div{
+    margin-left: -5px;
+}
+}
